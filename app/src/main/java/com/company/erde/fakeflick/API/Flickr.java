@@ -8,10 +8,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class Flickr {
-    private static final String KEY = "053a35e8dfb292c3b17399a0bf611566";
+    public static final String KEY = "053a35e8dfb292c3b17399a0bf611566";
     private static final String KEY_PRIVATE = "b2188cccf4bcaedc";
 
-    private static final String BASE_URL = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=2358e9f96c8c7b9cf3cd0780b36ad845&tags=Night&format=json&nojsoncallback=1";
+    private static final String BASE_URL = "https://api.flickr.com/services/rest/";
 
     private static Retrofit retrofit = null;
 
