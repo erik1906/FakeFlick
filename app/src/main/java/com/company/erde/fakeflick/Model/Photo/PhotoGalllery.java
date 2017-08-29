@@ -12,13 +12,13 @@ public class PhotoGalllery {
     private Owner owner;
 
     @SerializedName("title")
-    private Owner title;
+    private Title title;
 
-    public Owner getTitle() {
+    public Title getTitle() {
         return title;
     }
 
-    public void setTitle(Owner title) {
+    public void setTitle(Title title) {
         this.title = title;
     }
 

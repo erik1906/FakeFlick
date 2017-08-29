@@ -56,7 +56,7 @@ public class ImageAdapter extends BaseAdapter {
 
         //Picasso.with(this.mContext).load("http://www.flickr.com/photos/143021864@N05/36045079324").into(imageView);
 
-        String urls = url.get(position).getPath();
+        String urls = url.get(position).getPath()+"_q.jpg";
 
         Log.d("url", urls);
 

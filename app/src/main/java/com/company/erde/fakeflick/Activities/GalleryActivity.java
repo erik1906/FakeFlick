@@ -53,7 +53,7 @@ public class GalleryActivity extends AppCompatActivity {
                     url.setServer(res[i].getServer());
                     url.setId( res[i].getId());
                     url.setSecret( res[i].getSecret());
-                    url.setPath("https://farm"+url.getFarm()+".staticflickr.com/"+url.getServer()+"/"+url.getId()+"_"+url.getSecret()+"_q.jpg");
+                    url.setPath("https://farm"+url.getFarm()+".staticflickr.com/"+url.getServer()+"/"+url.getId()+"_"+url.getSecret());
                     urls.add(url);
                 }
 
@@ -66,6 +66,7 @@ public class GalleryActivity extends AppCompatActivity {
                                 Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(GalleryActivity.this, PhotoDisplay.class);
                         intent.putExtra("id", urls.get(position).getId());
+                        intent.putExtra("path", urls.get(position).getPath());
                         startActivity(intent);
                     }
                 });
