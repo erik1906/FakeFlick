@@ -7,6 +7,33 @@ package com.company.erde.fakeflick.Model.Search;
 public class PhotoInfo {
     String id;
     String owner;
+    String secret;
+    String server;
+    String farm;
+
+    public String getSecret() {
+        return secret;
+    }
+
+    public void setSecret(String secret) {
+        this.secret = secret;
+    }
+
+    public String getServer() {
+        return server;
+    }
+
+    public void setServer(String server) {
+        this.server = server;
+    }
+
+    public String getFarm() {
+        return farm;
+    }
+
+    public void setFarm(String farm) {
+        this.farm = farm;
+    }
 
     public String getOwner() {
         return owner;

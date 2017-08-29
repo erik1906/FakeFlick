@@ -42,8 +42,6 @@ public class CustomAdapter extends ArrayAdapter<ListCategory> {
         ivIcon.setImageResource(category.getImageURL());
 
 
-
-
         return view;
     }
 }
